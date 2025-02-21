@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design & SEO</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0; /* Light green background */
+            color: #333;
+            display: flex;
+        }
+
+        /* Navbar Styles (Left Sidebar) */
+        .navbar {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            width: 200px; /* Fixed width for the navbar */
+            padding: 20px;
+            height: 100vh; /* Full height */
+            position: fixed; /* Fixed position */
+            top: 0;
+            left: 0;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .navbar ul li {
+            margin: 15px 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 240px; /* Offset for the navbar */
+            padding: 20px;
+            flex: 1; /* Take remaining space */
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #228B22; /* Forest green */
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .button-container a:hover {
+            background-color: #1E7A1E; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Left Sidebar) -->
+    <div class="navbar">
+      <h1>unit 5</h1>
+        <h1>RWD & SEO</h1>
+        <ul>
+            <li><a href="#rwd">Responsive Web Design</a></li>
+            <li><a href="#rwd-techniques">RWD Techniques</a></li>
+            <li><a href="#mobile-first">Mobile-First Design</a></li>
+            <li><a href="#seo">SEO Basics</a></li>
+            <li><a href="#seo-techniques">SEO Techniques</a></li>
+            <li><a href="#seo-careers">SEO Careers</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Section 1: Responsive Web Design (RWD) -->
+        <div class="section" id="rwd">
+            <h2>1. Responsive Web Design (RWD)</h2>
+            <p>
+                Responsive Web Design (RWD) ensures a website automatically adjusts its layout, images, and text for different screen sizes and devices.
+            </p>
+            <h3>Importance of Responsive Web Design</h3>
+            <ul>
+                <li><strong>✔ Improves user experience across all devices.</strong></li>
+                <li><strong>✔ Helps in SEO ranking (Google prefers mobile-friendly sites).</strong></li>
+                <li><strong>✔ Reduces the need for separate mobile and desktop versions of a website.</strong></li>
+                <li><strong>✔ Increases website speed and accessibility.</strong></li>
+            </ul>
+        </div>
+
+        <!-- Section 2: Responsive Web Design Techniques -->
+        <div class="section" id="rwd-techniques">
+            <h2>2. Responsive Web Design Techniques</h2>
+            <p>
+                There are several methods to make a website responsive:
+            </p>
+            <h3>1) Fluid Grid Layout</h3>
+            <p>
+                Uses percentage-based widths instead of fixed pixels.
+            </p>
+            <pre><code>.container {
+    width: 80%;
+}</code></pre>
+
+            <h3>2) Flexible Images</h3>
+            <p>
+                Images adjust to different screen sizes using the <code>max-width</code> property.
+            </p>
+            <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+
+            <h3>3) Media Queries</h3>
+            <p>
+                Adjusts the design based on screen size.
+            </p>
+            <pre><code>@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}</code></pre>
+
+            <h3>4) Viewport Meta Tag</h3>
+            <p>
+                Ensures the website scales correctly on mobile devices.
+            </p>
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+
+            <h3>5) Responsive Typography</h3>
+            <p>
+                Adjusts text size based on screen width.
+            </p>
+            <pre><code>h1 {
+    font-size: 5vw;
+}</code></pre>
+        </div>
+
+        <!-- Section 3: Mobile-First Strategies -->
+        <div class="section" id="mobile-first">
+            <h2>3. Mobile-First Strategies</h2>
+            <h3>What is Mobile-First Design?</h3>
+            <p>
+                A mobile-first approach means designing a website for mobile devices first and then scaling up for larger screens.
+            </p>
+            <h3>Why Use Mobile-First Design?</h3>
+            <ul>
+                <li><strong>✔ More users browse on mobile than desktops.</strong></li>
+                <li><strong>✔ Improves website loading speed and performance.</strong></li>
+                <li><strong>✔ Preferred by Google for ranking in search results.</strong></li>
+            </ul>
+            <h3>Mobile-First Techniques</h3>
+            <ul>
+                <li><strong>✔ Use simple navigation (hamburger menus, large buttons).</strong></li>
+                <li><strong>✔ Optimize images for faster loading.</strong></li>
+                <li><strong>✔ Minimize JavaScript and reduce animations for speed.</strong></li>
+                <li><strong>✔ Use progressive enhancement (start simple, add features for larger screens).</strong></li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Search Engine Optimization (SEO) -->
+        <div class="section" id="seo">
+            <h2>4. Search Engine Optimization (SEO)</h2>
+            <h3>What is SEO?</h3>
+            <p>
+                SEO (Search Engine Optimization) is the process of optimizing a website to rank higher in search engine results.
+            </p>
+            <h3>Why is SEO Important?</h3>
+            <ul>
+                <li><strong>✔ Increases website traffic.</strong></li>
+                <li><strong>✔ Improves brand visibility.</strong></li>
+                <li><strong>✔ Helps websites rank higher on Google, Bing, Yahoo.</strong></li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Search Engine Optimization Techniques -->
+        <div class="section" id="seo-techniques">
+            <h2>5. Search Engine Optimization Techniques</h2>
+            <p>
+                There are two main types of SEO:
+            </p>
+            <h3>1) On-Page SEO (Optimizing Website Content)</h3>
+            <ul>
+                <li><strong>✔ Keyword Optimization</strong> – Use relevant words that users search for.</li>
+                <li><strong>✔ Meta Tags</strong> – Include proper <code>&lt;title&gt;</code> and <code>&lt;meta description&gt;</code>.</li>
+                <li><strong>✔ Header Tags (H1, H2, H3)</strong> – Use headings correctly for structure.</li>
+                <li><strong>✔ Internal Linking</strong> – Link to other pages on your website.</li>
+                <li><strong>✔ Image Optimization</strong> – Use compressed images and alt tags.</li>
+                <li><strong>✔ Mobile-Friendliness</strong> – Ensure the site is responsive.</li>
+                <li><strong>✔ Page Speed Optimization</strong> – Faster sites rank higher.</li>
+            </ul>
+            <h3>2) Off-Page SEO (External Factors)</h3>
+            <ul>
+                <li><strong>✔ Backlinks</strong> – Get links from other websites (guest posts, partnerships).</li>
+                <li><strong>✔ Social Media Marketing</strong> – Promote content on Facebook, Twitter, Instagram.</li>
+                <li><strong>✔ Google My Business</strong> – Optimize for local SEO.</li>
+                <li><strong>✔ Influencer Collaborations</strong> – Work with bloggers and YouTubers.</li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Search Engine Optimization Careers -->
+        <div class="section" id="seo-careers">
+            <h2>6. Search Engine Optimization Careers</h2>
+            <p>
+                SEO is a growing field with many career opportunities.
+            </p>
+            <h3>Top SEO Job Roles</h3>
+            <ul>
+                <li><strong>SEO Specialist</strong></li>
+                <li><strong>Content Strategist</strong></li>
+                <li><strong>Digital Marketing Manager</strong></li>
+                <li><strong>SEO Analyst</strong></li>
+            </ul>
+            <h3>Skills Required for SEO Careers</h3>
+            <ul>
+                <li><strong>✔ Keyword Research & Analysis</strong></li>
+                <li><strong>✔ Content Writing & Optimization</strong></li>
+                <li><strong>✔ Technical SEO (site speed, schema markup, mobile optimization)</strong></li>
+                <li><strong>✔ Google Analytics & Search Console Knowledge</strong></li>
+                <li><strong>✔ Backlink Building & Digital Marketing</strong></li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Conclusion -->
+        <div class="section" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                Responsive Web Design (RWD) ensures websites work on all screen sizes. Mobile-first strategies focus on designing for mobile devices first. SEO (Search Engine Optimization) helps websites rank higher in search results. SEO tools like Google Analytics and SEMRush assist in optimizing websites. SEO careers offer high-paying jobs in digital marketing and web development.
+            </p>
+            <p>
+                By learning Responsive Web Design and SEO, you can create fast, mobile-friendly, and high-ranking websites!
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Created with ❤️ by [Your Name]</p>
+            <div class="button-container">
+                <a href="index.html">Go Back</a>
+                <a href="unt4.html"><<pervious</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

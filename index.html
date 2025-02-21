@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Buttons</title>
+    <style>
+        /* General page styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f8f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes full height */
+        }
+
+        /* Header section (top + left side logo) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2d6a4f;
+            color: white;
+            padding: 20px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header .logo span {
+            color: #d4e157;
+        }
+
+        /* Navigation bar on the left */
+        .side-nav {
+            background-color: #2d6a4f;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .side-nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .side-nav ul li a {
+            display: block;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px;
+            text-decoration: none;
+            background-color: black;
+            margin: 10px 0;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .side-nav ul li a:hover {
+            background-color: #9ae3b3;
+            transform: scale(1.1);
+        }
+
+        /* Remove default styling from anchor tags */
+        a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit the text color from the button */
+        }
+
+        /* Main content section */
+        .main-content {
+            margin-left: 270px; /* Adjusted to accommodate left navigation */
+            padding: 40px 20px;
+            text-align: center;
+            flex-grow: 1; /* Allows this section to take up remaining space */
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            margin: 30px 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .content-section h2 {
+            font-size: 32px;
+            color: #2d6a4f;
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        /* Unit Buttons in Row */
+        .unit-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .unit-button {
+            padding: 18px 35px;
+            font-size: 18px;
+            color: white;
+            background-color: #2d6a4f;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            display: inline-block; /* Ensures the anchor behaves as a button */
+        }
+
+        .unit-button:hover {
+            background-color: #9ae3b3;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .unit-button:active {
+            background-color: #1b5e20;
+            transform: translateY(0);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Fade-in animation for sections */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            .side-nav {
+                width: 100%;
+                position: static;
+                height: auto;
+                padding-top: 20px;
+                box-shadow: none;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+            .unit-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (top) -->
+    <header>
+        <div class="logo">
+            Unit <span>Selection</span>
+        </div>
+    </header>
+
+    <!-- Side Navigation Bar -->
+    <div class="side-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section">
+            <h2>Welcome to the Home Page</h2>
+            <p>Choose a unit below to get started with your journey:</p>
+
+            <!-- Unit Buttons Row -->
+            <div class="unit-buttons">
+                <button class="unit-button"><a href="unt1.html">Unit 1-internet & www</a></button>
+                <button class="unit-button"><a href="unt2.html">Unit 2-web planning</a></button>
+                <button class="unit-button"><a href="unt3.html">Unit 3-Webpage Typography Issues</a></button>
+                <button class="unit-button"><a href="unt4.html">Unit 4-web design</a></button>
+                <button class="unit-button"><a href="unt5.html">Unit 5-RWD & SEO</a></button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Unit Selection. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+

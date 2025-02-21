@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet and World Wide Web (WWW)</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0; /* Light green background */
+            color: #333;
+            display: flex;
+        }
+
+        /* Navbar Styles (Left Sidebar) */
+        .navbar {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            width: 200px; /* Fixed width for the navbar */
+            padding: 20px;
+            height: 100vh; /* Full height */
+            position: fixed; /* Fixed position */
+            top: 0;
+            left: 0;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .navbar ul li {
+            margin: 15px 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 240px; /* Offset for the navbar */
+            padding: 20px;
+            flex: 1; /* Take remaining space */
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #228B22; /* Forest green */
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 5px;
+        }
+
+        /* Image Styles */
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .button-container a:hover {
+            background-color: #1E7A1E; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Left Sidebar) -->
+    <div class="navbar">
+      <h1>Unit 1</h1>
+        <h1>Internet & WWW</h1>
+        
+        <ul>
+            <li><a href="#what-is-internet">What is the Internet?</a></li>
+            <li><a href="#what-is-www">What is WWW?</a></li>
+            <li><a href="#access-internet">Accessing the Internet</a></li>
+            <li><a href="#types-websites">Types of Websites</a></li>
+            <li><a href="#web-design-tools">Web Design Tools</a></li>
+            <li><a href="#web-publishing">Web Publishing</a></li>
+            <li><a href="#design-principles">Design Principles</a></li>
+            <li><a href="#color-tool">Color as a Tool</a></li>
+            <li><a href="#publishing-issues">Publishing Issues</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Section 1: What is the Internet? -->
+        <div class="section" id="what-is-internet">
+            <h2>1. What is the Internet?</h2>
+            <p>
+                The Internet is a huge network that connects millions of computers and devices all over the world. It helps people to send messages, watch videos, play games, search for information, and much more. Think of the internet like a big spider web that connects computers so they can talk to each other.
+            </p>
+            <img src="https://via.placeholder.com/800x400.png?text=Internet+Image" alt="Internet Image">
+        </div>
+
+        <!-- Section 2: What is the World Wide Web (WWW)? -->
+        <div class="section" id="what-is-www">
+            <h2>2. What is the World Wide Web (WWW)?</h2>
+            <p>
+                The World Wide Web (WWW) is a part of the internet that allows us to visit websites. It is like a huge library with many books, but instead of books, we have websites. Websites contain text, pictures, videos, and links that take us to other pages.
+            </p>
+            <p>
+                For example, when you open Google, Facebook, or YouTube, you are using the World Wide Web.
+            </p>
+            <img src="https://via.placeholder.com/800x400.png?text=WWW+Image" alt="WWW Image">
+        </div>
+
+        <!-- Section 3: Ways to Access the Internet and the Web -->
+        <div class="section" id="access-internet">
+            <h2>Ways to Access the Internet and the Web</h2>
+            <p>
+                To use the internet, we need three things:
+            </p>
+            <ul>
+                <li><strong>A device</strong> – A computer, mobile phone, tablet, or laptop.</li>
+                <li><strong>An Internet connection</strong> – This is like a road that connects our device to the internet. We can get an internet connection through:
+                    <ul>
+                        <li>Wi-Fi – Wireless internet at home, schools, cafes, or offices.</li>
+                        <li>Mobile Data (4G, 5G) – Internet on our mobile phone.</li>
+                        <li>Broadband (Fiber, DSL) – Internet using a wire at home.</li>
+                    </ul>
+                </li>
+                <li><strong>A Web Browser</strong> – A special program that lets us visit websites, like:
+                    <ul>
+                        <li>Google Chrome</li>
+                        <li>Mozilla Firefox</li>
+                        <li>Safari</li>
+                        <li>Microsoft Edge</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                When we type a website address (like <code>www.google.com</code>) in the browser, it opens the website for us.
+            </p>
+        </div>
+
+        <!-- Section 4: Types of Websites -->
+        <div class="section" id="types-websites">
+            <h2>Types of Websites</h2>
+            <p>
+                Websites are of different types based on what they are used for:
+            </p>
+            <ul>
+                <li><strong>Personal Websites</strong> – Websites made by individuals to share their thoughts, blogs, or hobbies.
+                    <br><em>Example: A blog about travel or food.</em>
+                </li>
+                <li><strong>Business Websites</strong> – Websites created by companies to sell products or provide services.
+                    <br><em>Example: Amazon, Flipkart.</em>
+                </li>
+                <li><strong>Educational Websites</strong> – Websites that help students learn new things.
+                    <br><em>Example: Wikipedia, BYJU’s.</em>
+                </li>
+                <li><strong>Entertainment Websites</strong> – Websites where people can watch videos, listen to music, or play games.
+                    <br><em>Example: YouTube, Netflix.</em>
+                </li>
+                <li><strong>Social Media Websites</strong> – Websites where people can connect and share photos, messages, and videos.
+                    <br><em>Example: Facebook, Instagram, Twitter.</em>
+                </li>
+                <li><strong>News Websites</strong> – Websites that provide the latest news.
+                    <br><em>Example: BBC News, Times of India.</em>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Web Design Tools -->
+        <div class="section" id="web-design-tools">
+            <h2>Web Design Tools</h2>
+            <p>
+                Web design means creating and making websites look nice and easy to use. To design a website, we use web design tools. Some popular tools are:
+            </p>
+            <ul>
+                <li><strong>HTML (HyperText Markup Language)</strong> – This is the basic language used to make a website. It creates the structure of the webpage.</li>
+                <li><strong>CSS (Cascading Style Sheets)</strong> – This helps in making the website look attractive by adding colors, fonts, and styles.</li>
+                <li><strong>JavaScript</strong> – This adds movement and interaction to a website, like buttons that change color when clicked.</li>
+                <li><strong>WordPress</strong> – A tool used to create websites easily without coding.</li>
+                <li><strong>Canva & Photoshop</strong> – These tools help in designing images and graphics for websites.</li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Introduction to Web Publishing -->
+        <div class="section" id="web-publishing">
+            <h2>Introduction to Web Publishing</h2>
+            <p>
+                <strong>What is Web Publishing?</strong>
+                <br>
+                Web publishing means uploading a website on the internet so that everyone can see it. It is like printing a book and selling it in stores so that people can read it.
+            </p>
+            <p>
+                <strong>Steps in Web Publishing:</strong>
+            </p>
+            <ol>
+                <li><strong>Creating the website</strong> – Using web design tools like HTML, CSS, and JavaScript.</li>
+                <li><strong>Buying a domain name</strong> – A website address like <code>www.mywebsite.com</code>.</li>
+                <li><strong>Choosing a web hosting service</strong> – A company that stores your website online.</li>
+                <li><strong>Uploading the website</strong> – Making the website live on the internet.</li>
+            </ol>
+            <p>
+                <strong>Popular web hosting services are:</strong>
+                <br>
+                GoDaddy, Bluehost, Hostinger.
+            </p>
+        </div>
+
+        <!-- Section 7: Basic Web Design Principles -->
+        <div class="section" id="design-principles">
+            <h2>Basic Web Design Principles</h2>
+            <p>
+                A good website should be:
+            </p>
+            <ul>
+                <li><strong>Simple and Clean</strong> – The website should not look messy.</li>
+                <li><strong>Fast Loading</strong> – The pages should open quickly.</li>
+                <li><strong>Easy to Read</strong> – The text should be big enough to read easily.</li>
+                <li><strong>Mobile Friendly</strong> – The website should work well on phones and tablets.</li>
+                <li><strong>Good Colors and Images</strong> – Using the right colors and pictures makes the website attractive.</li>
+            </ul>
+        </div>
+
+        <!-- Section 8: Color as a Web Design Tool -->
+        <div class="section" id="color-tool">
+            <h2>Color as a Web Design Tool</h2>
+            <p>
+                Colors are important in web design because they:
+            </p>
+            <ul>
+                <li><strong>Make a website attractive</strong> – Good colors make people stay on the website.</li>
+                <li><strong>Create emotions</strong> –
+                    <ul>
+                        <li>Red = Excitement</li>
+                        <li>Blue = Trust and calmness</li>
+                        <li>Green = Nature and freshness</li>
+                        <li>Yellow = Happiness</li>
+                    </ul>
+                </li>
+                <li><strong>Help in branding</strong> – Big companies use specific colors in their logos.
+                    <br><em>Example: Facebook is blue, YouTube is red.</em>
+                </li>
+            </ul>
+            <p>
+                Designers use <strong>Color Theory</strong> to choose the right colors for websites.
+            </p>
+        </div>
+
+        <!-- Section 9: Web Publishing Issues -->
+        <div class="section" id="publishing-issues">
+            <h2>Web Publishing Issues</h2>
+            <p>
+                Even after publishing a website, there can be some problems:
+            </p>
+            <ul>
+                <li><strong>Slow Website Speed</strong> – If a website has too many large images, it loads slowly.</li>
+                <li><strong>Security Issues</strong> – Hackers can try to break into websites and steal information.</li>
+                <li><strong>Mobile Compatibility</strong> – A website should work properly on mobile phones.</li>
+                <li><strong>Broken Links</strong> – Sometimes links on the website do not work.</li>
+                <li><strong>Copyright Issues</strong> – Using someone else’s content without permission can cause problems.</li>
+            </ul>
+            <p>
+                To avoid these issues, website owners should update and maintain their websites regularly.
+            </p>
+        </div>
+
+        <!-- Section 10: Conclusion -->
+        <div class="section" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                The Internet and World Wide Web help us connect, learn, and share information. Websites are of different types, and we use special tools to create them. Web publishing allows us to put websites online, and web design principles help in making them attractive and user-friendly. However, website owners must also take care of web publishing issues like security and speed.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Created by Isak B K</p>
+            <div class="button-container">
+                <a href="index.html">Go Back</a>
+                <a href="unt2.html">Next>></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

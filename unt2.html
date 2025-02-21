@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development Planning Process</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0; /* Light green background */
+            color: #333;
+            display: flex;
+        }
+
+        /* Navbar Styles (Left Sidebar) */
+        .navbar {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            width: 200px; /* Fixed width for the navbar */
+            padding: 20px;
+            height: 100vh; /* Full height */
+            position: fixed; /* Fixed position */
+            top: 0;
+            left: 0;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .navbar ul li {
+            margin: 15px 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 240px; /* Offset for the navbar */
+            padding: 20px;
+            flex: 1; /* Take remaining space */
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #228B22; /* Forest green */
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #228B22; /* Forest green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .button-container a:hover {
+            background-color: #1E7A1E; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Left Sidebar) -->
+    <div class="navbar">
+      <h1>Unit 2</h1>
+        <h1>Website Planning</h1>
+        <ul>
+            <li><a href="#purpose-audience">Purpose & Audience</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#structure">Structure & Usability</a></li>
+            <li><a href="#testing">Testing & Publishing</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Section 1: Define the Website’s Purpose and Audience -->
+        <div class="section" id="purpose-audience">
+            <h2>1. Define the Website’s Purpose and Audience</h2>
+            <h3>What is the Purpose of the Website?</h3>
+            <p>
+                Before creating a website, we need to determine why we are building it. The purpose of the website can be:
+            </p>
+            <ul>
+                <li><strong>Business</strong> – Selling products or services (e.g., Amazon, Flipkart).</li>
+                <li><strong>Educational</strong> – Sharing knowledge and learning materials (e.g., Wikipedia, Coursera).</li>
+                <li><strong>Entertainment</strong> – Streaming music, videos, or games (e.g., YouTube, Netflix).</li>
+                <li><strong>Personal</strong> – A personal blog or portfolio.</li>
+                <li><strong>Non-Profit</strong> – Websites for social causes and awareness (e.g., charity websites).</li>
+            </ul>
+            <p>
+                The purpose of the website influences the design, structure, and content.
+            </p>
+
+            <h3>Who is the Target Audience?</h3>
+            <p>
+                Understanding the target audience helps in designing the website. The audience can be classified based on:
+            </p>
+            <ul>
+                <li><strong>Age Group</strong> – Kids, teenagers, adults, or senior citizens.</li>
+                <li><strong>Interests</strong> – Technology, fashion, fitness, education, etc.</li>
+                <li><strong>Location</strong> – Local, national, or international visitors.</li>
+                <li><strong>Technical Skills</strong> – Beginners, intermediate, or advanced users.</li>
+            </ul>
+            <p>
+                For example, a kids' website should have bright colors, fun fonts, and simple navigation, while a business website should look professional.
+            </p>
+        </div>
+
+        <!-- Section 2: Determine the Website’s General Content -->
+        <div class="section" id="content">
+            <h2>2. Determine the Website’s General Content</h2>
+            <p>
+                Once we know the purpose and audience, we decide what type of content the website will have.
+            </p>
+            <h3>Types of Content on a Website</h3>
+            <ul>
+                <li><strong>Text Content</strong> – Articles, blog posts, descriptions, FAQs.</li>
+                <li><strong>Images and Graphics</strong> – Photos, icons, illustrations.</li>
+                <li><strong>Videos and Animations</strong> – Tutorials, advertisements, interactive content.</li>
+                <li><strong>Audio Files</strong> – Podcasts, music, voice instructions.</li>
+                <li><strong>Forms and Surveys</strong> – Contact forms, feedback forms, signup forms.</li>
+            </ul>
+            <h3>How to Plan Website Content?</h3>
+            <ul>
+                <li>Keep content short and easy to read.</li>
+                <li>Use headings, subheadings, and bullet points.</li>
+                <li>Add high-quality images and videos.</li>
+                <li>Update content regularly to keep it relevant.</li>
+            </ul>
+            <p>
+                A well-organized content strategy ensures that users find information easily and enjoy the website experience.
+            </p>
+        </div>
+
+        <!-- Section 3: Select the Website’s Structure, Page Length, Content Placement, and Usability -->
+        <div class="section" id="structure">
+            <h2>3. Select the Website’s Structure, Page Length, Content Placement, and Usability</h2>
+            <h3>Website Structure (Layout and Navigation)</h3>
+            <p>
+                The website structure refers to how pages are arranged. A good structure makes it easier for users to find information.
+            </p>
+            <h4>Common Website Structures</h4>
+            <ul>
+                <li><strong>Hierarchical Structure (Tree Model)</strong> – Best for large websites with categories and subcategories (e.g., e-commerce sites like Amazon).</li>
+                <li><strong>Linear Structure</strong> – Best for step-by-step websites like tutorials or online courses.</li>
+                <li><strong>Web-linked Structure</strong> – Best for interactive sites where users explore freely (e.g., Wikipedia).</li>
+            </ul>
+            <p>
+                A clear menu bar, links, and search bar improve navigation.
+            </p>
+
+            <h3>Page Length</h3>
+            <ul>
+                <li>Short pages are best for landing pages or quick information.</li>
+                <li>Long pages are useful for articles, blogs, and detailed guides.</li>
+                <li>Avoid excessive scrolling and use "Read More" buttons to keep pages user-friendly.</li>
+            </ul>
+
+            <h3>Content Placement</h3>
+            <p>
+                Where we place content on a webpage affects how users interact with it.
+            </p>
+            <ul>
+                <li><strong>Header</strong> – Website logo, menu bar, search box.</li>
+                <li><strong>Main Section</strong> – Articles, images, videos, products.</li>
+                <li><strong>Sidebar</strong> – Additional links, advertisements, recent posts.</li>
+                <li><strong>Footer</strong> – Contact details, copyright information, privacy policy.</li>
+            </ul>
+            <p>
+                A well-placed CTA (Call to Action), such as “Sign Up,” “Buy Now,” or “Read More,” helps guide users to take action.
+            </p>
+
+            <h3>Usability (User Experience - UX)</h3>
+            <p>
+                A website should be:
+            </p>
+            <ul>
+                <li><strong>Easy to navigate</strong> – Simple menus and search bars.</li>
+                <li><strong>Mobile-friendly</strong> – Should work on mobile, tablet, and desktop.</li>
+                <li><strong>Fast-loading</strong> – Pages should open within 3 seconds.</li>
+                <li><strong>Accessible</strong> – Should support screen readers for disabled users.</li>
+                <li><strong>Error-free</strong> – No broken links or missing images.</li>
+            </ul>
+            <p>
+                Example: A news website should display headlines and images at the top, while a shopping website should highlight products and offers.
+            </p>
+        </div>
+
+        <!-- Section 4: Develop a Plan to Test, Publish, and Maintain the Website -->
+        <div class="section" id="testing">
+            <h2>4. Develop a Plan to Test, Publish, and Maintain the Website</h2>
+            <h3>Testing the Website</h3>
+            <p>
+                Before launching the website, we must test it to ensure everything works properly.
+            </p>
+            <h4>Website Testing Checklist:</h4>
+            <ul>
+                <li>✅ Check Compatibility – The website should work on all browsers (Chrome, Firefox, Safari, Edge).</li>
+                <li>✅ Check Responsiveness – It should look good on mobile, tablet, and desktop.</li>
+                <li>✅ Check Links – All links should be working and not broken.</li>
+                <li>✅ Check Speed – Websites should load within a few seconds.</li>
+                <li>✅ Check Security – The website should use HTTPS for safety.</li>
+                <li>✅ Check Forms – Contact forms should correctly send messages.</li>
+                <li>✅ Check Spelling and Grammar – Content should be error-free.</li>
+            </ul>
+            <p>
+                Testing helps in fixing problems before publishing the website.
+            </p>
+
+            <h3>Publishing the Website</h3>
+            <p>
+                Once testing is complete, we need to publish the website so that people can access it.
+            </p>
+            <h4>Steps to Publish a Website:</h4>
+            <ol>
+                <li><strong>Get a Domain Name</strong> – A website address like www.mywebsite.com.</li>
+                <li><strong>Choose a Web Hosting Service</strong> – A company that stores your website files. Examples: GoDaddy, Bluehost, Hostinger.</li>
+                <li><strong>Upload the Website Files</strong> – Use FTP (File Transfer Protocol) or a control panel to upload files.</li>
+                <li><strong>Set Up SEO (Search Engine Optimization)</strong> – Helps the website appear in search results on Google.</li>
+                <li><strong>Make the Website Live</strong> – After everything is set, the website is ready for visitors.</li>
+            </ol>
+            <p>
+                Once published, we should test the website again to ensure it works properly.
+            </p>
+
+            <h3>Maintaining the Website</h3>
+            <p>
+                A website needs regular updates and maintenance to keep it functional and secure.
+            </p>
+            <h4>Website Maintenance Checklist:</h4>
+            <ul>
+                <li>✅ Update Content – Add new articles, products, or features.</li>
+                <li>✅ Fix Broken Links – Remove or update old links.</li>
+                <li>✅ Check for Security Issues – Protect against hackers and malware.</li>
+                <li>✅ Optimize Speed – Remove unnecessary files to improve loading time.</li>
+                <li>✅ Improve SEO – Keep the website ranking high on search engines.</li>
+            </ul>
+            <p>
+                Without maintenance, a website may become slow, outdated, or even unsafe for users.
+            </p>
+        </div>
+
+        <!-- Section 5: Conclusion -->
+        <div class="section" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                Developing a website requires careful planning and execution. First, we define the purpose and audience, then we plan the content, structure, usability, and page layout. Before launching, we test the website for performance, security, and compatibility. Finally, after publishing, we must regularly maintain the website to keep it updated and running smoothly.
+            </p>
+            <p>
+                A well-planned website ensures a great user experience and better engagement, helping users easily find the information they need.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Created by Isak B k</p>
+            <div class="button-container">
+                <a href="index.html">Go Back</a>
+                <a href="unt1.html"previous</a>
+                 <a href="unt3.html">Next>></a>
+                 
+                
+               
+               
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
